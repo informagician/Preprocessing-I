@@ -15,83 +15,127 @@
 </head>
 
 <body>
+  <div class="navbar">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
   <div class="container">
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
-  </nav>
-  <header>
-    <div>
-      <img src="img/milo-rastgoo.jpg">
-    </div>
-    <div>
-      <h1>Milo Rastgoo</h1>
-      <h2>Full-Stack Engineer</h2>
-    </div>
-    <hr>
-    <div>
-      <p>Occasionally I have time to work on side projects, if you're interested, let me know by signing up on this
-        website.</p>
-      <button>Lets Team Up</button>
-    </div>
-  </header>
-  <section>
-    <div>
-      <h2>Listen Up...</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum hic quaerat dignissimos vel culpa impedit
-        maiores cupiditate tempore libero, nulla ipsum, odit quos enim facere eos dolor accusamus voluptatem laudantium.
-      </p>
-    </div>
-    <div>
-      <h2>Stuff I'm Good At:</h2>
-      <ul>
-        <li>Disc Golf</li>
-        <li>Coding up UI</li>
-        <li>Playing lots of video games</li>
-        <li>Using bootstrap grid</li>
-        <li>Taking long naps</li>
-      </ul>
-    </div>
-  </section>
-  <section>
-    <h2>Work History</h2>
-    <table>
-      <thead>
-        <tr>
-          <td>Yrs</td>
-          <td>Company</td>
-          <td>Title</td>
-          <td>Tech Used</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Apple</td>
-          <td>Software Engineer</td>
-          <td>Swift</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Microsoft</td>
-          <td>Computer Scientist</td>
-          <td>.NET</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Amazon</td>
-          <td>Dev Ops</td>
-          <td>AWS</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <footer>
-    <p>Copyright Awesomeness 2018</p>
-  </footer>
-</div>
+    <header>
+      <div class="top">
+        <div class="image">
+          <img src="img/milo-rastgoo.jpg" alt="Picture of Milo Rastgoo">
+        </div>
+        <div class="title">
+          <h1>Milo Rastgoo</h1>
+          <h2>Full-Stack Engineer</h2>
+        </div>
+      </div>
+      <hr>
+      <div class="bottom">
+        <div>
+          <p>Occasionally I have time to work on side projects, if you're interested, let me know by signing up on this
+            website.</p>
+          <button>Lets Team Up</button>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div>
+        <h2>Listen Up...</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum hic quaerat dignissimos vel culpa
+          impedit
+          maiores cupiditate tempore libero, nulla ipsum, odit quos enim facere eos dolor accusamus voluptatem
+          laudantium.
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum hic quaerat dignissimos vel culpa
+          impedit
+          maiores cupiditate tempore libero, nulla ipsum, odit quos enim facere eos dolor accusamus voluptatem
+          laudantium.
+        </p>
+      </div>
+      <div>
+        <h2>Stuff I'm Good At:</h2>
+        <ul>
+          <li>Disc Golf</li>
+          <li>Coding up UI</li>
+          <li>Playing lots of video games</li>
+          <li>Using bootstrap grid</li>
+          <li>Taking long naps</li>
+        </ul>
+      </div>
+    </section>
+    <section class="table">
+      <h2>Work History</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>Yrs</td>
+            <td>Company</td>
+            <td>Title</td>
+            <td>Tech Used</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Apple</td>
+            <td>Software Engineer</td>
+            <td>Swift</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Microsoft</td>
+            <td>Computer Scientist</td>
+            <td>.NET</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Amazon</td>
+            <td>Dev Ops</td>
+            <td>AWS</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="foot">
+      <h2>
+        Contact me...
+      </h2>
+      <div class="contact">
+        <div class="form">
+          <p>Fill this form and hit send.</p>
+          <form action="/action_page.php">
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br>
+            Message:<br>
+            <textarea></textarea>
+            <br><br>
+            <input type="submit" value="Send">
+          </form>
+        </div>
+        <div class="info">
+          <p>Or come visit me.</p>
+          <address>
+            123 Parkway, City<br>
+            Province, Country
+          </address>
+          <p>But call me before.</p>
+          <a href="tel:123-456-7890">123-456-7890</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright Awesomeness 2018</p>
+    </footer>
+  </div>
 </body>
 
 </html>
