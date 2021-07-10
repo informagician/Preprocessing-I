@@ -1,1 +1,403 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'McLaren';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('McLaren'), local('McLaren-Regular'), url(https://fonts.gstatic.com/s/mclaren/v7/2EbnL-ZuAXFqZFXIeYEV9w.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.navbar {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.navbar nav {
+  margin-left: 50%;
+  width: 50%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .navbar nav {
+    width: 100%;
+    display: flex;
+    height: 25vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+}
+.navbar nav a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #007ABD;
+  font-weight: bold;
+}
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #eee;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #FEFCFB;
+  border-bottom: 1px solid #eee;
+}
+header .top {
+  display: flex;
+  padding: 5%;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header .top {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+header .top h1 {
+  color: #007ABD;
+  font-family: 'McLaren', cursive;
+  font-size: 2.5rem;
+  margin: 1% 0 1%;
+}
+header .top h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #001F54;
+  margin: 20px 0 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+header .top .title {
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  header .top .title {
+    margin: 0;
+  }
+}
+header hr {
+  border-top: 1px solid #ccc;
+  width: 90%;
+}
+header .title {
+  display: flex;
+  flex-direction: column;
+}
+header img {
+  width: 10rem;
+  border-radius: 50%;
+}
+header .bottom {
+  padding: 3% 5%;
+}
+header .bottom button {
+  border: 1px solid #001F54;
+  padding: 8px 30px;
+  background-color: #007ABD;
+  color: #FEFCFB;
+  margin-top: 2%;
+}
+.main {
+  display: flex;
+  padding: 1% 3%;
+}
+@media (max-width: 500px) {
+  .main {
+    flex-direction: column;
+  }
+}
+.main div {
+  width: 50%;
+  padding-right: 2%;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .main div {
+    width: 100%;
+  }
+}
+.main h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #001F54;
+  margin: 20px 0 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.main ul {
+  width: 100%;
+  border: 1px solid darkgrey;
+}
+.main ul li {
+  border: 1px solid darkgrey;
+  padding: 10px 10px;
+}
+.table {
+  padding: 1% 3% 3%;
+}
+.table h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #001F54;
+  margin: 20px 0 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.table table {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px;
+}
+.table table td {
+  vertical-align: middle;
+}
+.table table thead {
+  border-top: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+.table table thead tr {
+  height: 50px;
+}
+.table table thead td {
+  font-weight: bold;
+}
+.table table thead td:nth-child(1) {
+  padding-left: 1%;
+}
+.table table tbody tr {
+  height: 40px;
+  border-top: 1px solid #ddd;
+}
+.table table tbody tr:nth-child(2n+1) {
+  background-color: #eee;
+}
+.table table tbody td:nth-child(1) {
+  padding-left: 15px;
+}
+.foot {
+  background-color: #FEFCFB;
+  border-top: 1px solid #eee;
+  padding: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.foot h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #001F54;
+  margin: 20px 0 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.foot .contact {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .foot .contact {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.foot .contact .form {
+  margin-top: 2%;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .foot .contact .form {
+    width: 100%;
+  }
+}
+.foot .contact .form p {
+  margin: 0 0 2%;
+}
+.foot .contact .form input {
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  width: 80%;
+  padding: 8px 15px;
+}
+@media (max-width: 500px) {
+  .foot .contact .form input {
+    width: 100%;
+  }
+}
+.foot .contact .form textarea {
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  width: 80%;
+  padding: 8px 15px;
+  height: 6;
+}
+@media (max-width: 500px) {
+  .foot .contact .form textarea {
+    width: 100%;
+  }
+}
+.foot .contact .form input[type=submit] {
+  width: 50%;
+  align-self: center;
+}
+.foot .contact .info p {
+  margin: 2% 0;
+  line-height: 2;
+}
+.foot .contact .info address {
+  line-height: 1.5;
+}
+footer {
+  width: 100%;
+  background-color: #001F54;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer p {
+  color: #FEFCFB;
+  font-family: Arial, Helvetica, sans-serif;
+}
